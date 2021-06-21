@@ -5,8 +5,7 @@
   justify-content: space-between;
   align-items: flex-end;
   padding: 100px 30px 30px;
-  background: #393e46;
-  background: #222831;
+  background: $brand-color;
   box-sizing: border-box;
 
   h1{
@@ -14,13 +13,13 @@
     margin: 0 auto;
     font-size: 42px;
     line-height: 1.4;
-    font-weight: 700;
+    font-weight: $bold;
     color: #fff;
     
     span{
       color: #fff;
       font-size: 38px;
-      font-weight: 700;
+      font-weight: $bold;
       opacity: 0.4;
     }
     span.nbsp{
@@ -53,7 +52,7 @@
         width: 30px;
         height: 4px;
         margin-top: 8px;
-        background: #fff;
+        background: $background-color;
       }
       span:first-child{
         margin-top: 0;
@@ -67,7 +66,7 @@
       right: -100%;
       width: 35%;
       height: 100vh;
-      background: #222831;        
+      background: $header-color;        
       overflow-y: auto;
       transition: all 0.5s ease 0s;
       
@@ -84,7 +83,7 @@
           display: block;
           width: 30px; 
           height: 3px;
-          background: #fff;
+          background: $background-color;
           transform: translate3d(-50%,-50%,0) rotateZ(45deg);
           transform-origin: center;
           
