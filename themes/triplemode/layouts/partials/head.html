@@ -64,8 +64,7 @@
                 $('.side').removeClass('on');
             });
 
-            $('ul.slide>li').click(function (e) {
-                e.preventDefault();
+            $('ul.slide>li').click(function () {
                 if ($(this).find('.down').hasClass('on')) {
                     $(this).find('.down').removeClass('on');
                     $(this).find('.down').prev().stop().slideUp(500);
