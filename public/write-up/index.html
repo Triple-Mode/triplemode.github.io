@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+
+    <base href="">
+    <title> My New Hugo Site </title>
+    <meta name="description" content="this is description">
+
+    <link rel="canonical" href="/write-up/">
+    
+    <link href="/write-up/index.xml" rel="alternate" type="application/rss+xml" title="" />
+    
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+
+    
+    <link rel="stylesheet" href="/sass/main.min.c218590eef5fed866a6dec3dd77e33853b19d61f400e218f6ed78b4b2f88139e.css">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130304424-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130304424-1');
+    </script>
+
+    
+    <script data-ad-client="ca-pub-1587587893565234" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <script>
+        $(function () {
+            $(".cat1>li").click(function () {
+                $(this).siblings().find('ul').slideUp(300);
+                $(this).find('ul').slideToggle(300);
+            })
+
+            $(window).scroll(function () {
+                activeBg();
+            });
+
+            activeBg();
+
+
+            $('.h-menu').click(function (e) {
+                e.preventDefault();
+                $('.side').addClass('on');
+            });
+
+            $('.close').click(function (e) {
+                e.preventDefault();
+                $('.side').removeClass('on');
+            });
+
+            $('ul.slide>li').click(function () {
+                if ($(this).find('.down').hasClass('on')) {
+                    $(this).find('.down').removeClass('on');
+                    $(this).find('.down').prev().stop().slideUp(500);
+                } else {
+                    $(this).find('.down').addClass('on');
+                    $(this).find('.down').prev().stop().slideDown(500);
+                }
+            })
+        })
+
+        function activeBg() {
+            if ($(window).scrollTop() > 0) {
+                $('.site-header').addClass('on');
+            } else {
+                $('.site-header').removeClass('on');
+            }
+        }
+
+    </script>
+</head>
+<header class="site-header">
+    <h1 class="web-t" onclick="window.location.href='/'"><span>function</span><em> 천방지축 얼렁뚱땅
+        </em><span>(</span><i>🤣</i><span>)</span> {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="nbsp">title =</span> 빙글빙글 돌아가는 맨딩이의 개발일지
+        <br />}
+    </h1>
+
+    <h1 class="mob-t" onclick="window.location.href='/'">
+        <span>천/얼/빙/돌(</span><i>🤣</i><span>)</span>
+        <br />맨딩이의 개발일지
+    </h1>
+
+    <nav>
+        <div class="h-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="side">
+            <div class="close">
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="slide">
+                <li class="on"><a href="#">All Post</a>
+                </li>
+                <li><a href="#">HTML</a>
+                    <ul>
+                        <li><a href="#">menu1</a></li>
+                        <li><a href="#">menu2</a></li>
+                        <li><a href="#">menu3</a></li>
+                        <li><a href="#">menu4</a></li>
+                        <li><a href="#">menu5</a></li>
+                    </ul>
+                    <span class="down"></span>
+                </li>
+                <li><a href="#">CSS</a>
+                    <ul>
+                        <li><a href="#">menu1</a></li>
+                        <li><a href="#">menu2</a></li>
+                        <li><a href="#">menu3</a></li>
+                        <li><a href="#">menu4</a></li>
+                        <li><a href="#">menu5</a></li>
+                    </ul>
+                    <span class="down"></span>
+                </li>
+                <li><a href="#">Javascript</a>
+                    <ul>
+                        <li><a href="#">menu1</a></li>
+                        <li><a href="#">menu2</a></li>
+                        <li><a href="#">menu3</a></li>
+                        <li><a href="#">menu4</a></li>
+                        <li><a href="#">menu5</a></li>
+                    </ul>
+                    <span class="down"></span>
+                </li>
+                <li><a href="#">Jquery</a>
+                    <ul>
+                        <li><a href="#">menu1</a></li>
+                        <li><a href="#">menu2</a></li>
+                        <li><a href="#">menu3</a></li>
+                        <li><a href="#">menu4</a></li>
+                        <li><a href="#">menu5</a></li>
+                    </ul>
+                    <span class="down"></span>
+                </li>
+                <li><a href="#">React</a>
+                    <ul>
+                        <li><a href="#">menu1</a></li>
+                        <li><a href="#">menu2</a></li>
+                        <li><a href="#">menu3</a></li>
+                        <li><a href="#">menu4</a></li>
+                        <li><a href="#">menu5</a></li>
+                    </ul>
+                    <span class="down"></span>
+                </li>
+                <li><a href="#">React Native</a>
+                    <ul>
+                        <li><a href="#">menu1</a></li>
+                        <li><a href="#">menu2</a></li>
+                        <li><a href="#">menu3</a></li>
+                        <li><a href="#">menu4</a></li>
+                        <li><a href="#">menu5</a></li>
+                    </ul>
+                    <span class="down"></span>
+                </li>
+                <li><a href="#">devHyun</a>
+                    <ul>
+                        <li><a href="#">menu1</a></li>
+                        <li><a href="#">menu2</a></li>
+                        <li><a href="#">menu3</a></li>
+                        <li><a href="#">menu4</a></li>
+                        <li><a href="#">menu5</a></li>
+                    </ul>
+                    <span class="down"></span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="content">
+        
+        
+<div class="home">
+    <div class="posts">
+        <nav>
+    <h2>Menu</h2>
+    <ul class="slide">
+        <li class="on"><a>All Post</a>
+            <ul>
+                <li><a href="/write-up/los">aaa</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+            </ul>
+            <span class="down"></span>
+        </li>
+        <li><a>HTML</a>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+            </ul>
+            <span class="down"></span>
+        </li>
+        <li><a>CSS</a>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+            </ul>
+            <span class="down"></span>
+        </li>
+        <li><a>Javascript</a>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+            </ul>
+            <span class="down"></span>
+        </li>
+        <li><a>Jquery</a>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+            </ul>
+            <span class="down"></span>
+        </li>
+        <li><a>React</a>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+            </ul>
+            <span class="down"></span>
+        </li>
+        <li><a>React Native</a>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+            </ul>
+            <span class="down"></span>
+        </li>
+        <li><a>devHyun</a>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+            </ul>
+            <span class="down"></span>
+        </li>
+    </ul>
+</nav>
+
+        <div>
+            <h3> Posts 2</h3>
+            <ul class="post-box">
+                
+                <li class="post-teaser">
+                    <a href="/write-up/los/">
+                        <div>
+                            <em></em>
+                            <h4>Hugo로 블로그 만들기</h4>
+                            <div class="post-info">
+                                <p class="meta">
+                                    2021-05-05
+                                </p>
+                                <div class="excerpt">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+                <li class="post-teaser">
+                    <a href="/write-up/pwnable.kr/">
+                        <div>
+                            <em></em>
+                            <h4></h4>
+                            <div class="post-info">
+                                <p class="meta">
+                                    2021-05-05
+                                </p>
+                                <div class="excerpt">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+
+</div>
+
+    </div>
+    <ul class='social'>
+    
+    <li>
+        <a href="https://www.github.com/ATFutures" class="icon alt" target="_blank">
+            <i class="fa fa-github fa-2x"></i>
+        </a>
+    </li>
+    
+    <li>
+        <a href="https://www.github.com/ATFutures" class="icon alt" target="_blank">
+            <i class="fa fa-instagram fa-2x"></i>
+        </a>
+    </li>
+    
+</ul>
+<footer class="site-footer">
+    <p ckass="text">Powered by mingzzi with myund</p>
+</footer>
+    <script id="dsq-count-scr" src="//mingzzis-blog.disqus.com/count.js" async></script>
+
+    
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-130304424-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+    
+</body>
+</body>
+
+</html>
