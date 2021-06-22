@@ -3,7 +3,7 @@
 
 $font-family-main: "Noto Sans KR";
 $font-family-headings: "Noto Sans KR", sans-serif;
-$font-size: 1em;
+$font-size: 1.125em;
 
 //breakpoint
 $web-l : 1200px;
@@ -57,3 +57,6 @@ $semi-bold: 600;
 $bold: 700;
 $extra-bold: 800;
 $black: 900;
+
+// Syntax highlight
+$syntax-background: rgba(27, 31, 35, 0.05);

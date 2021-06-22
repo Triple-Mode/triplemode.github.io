@@ -47,13 +47,13 @@ h3 {
   font-weight: 500;
 }
 h4 {
-  font-size: 1em;
+  font-size: 1.17em;
 }
 blockquote {
-    background: #f3f3f3;
+    background: $syntax-background;
     border-left: 7px solid #222831;
     margin: 1.5em 10px;
-    padding: 0.5em 10px;
+    padding: 0.5em;
 }
 blockquote p:last-child,
 footer p:last-child {
@@ -81,6 +81,7 @@ kbd,
 pre,
 samp {
   margin: 1em 0;
+  font-family: $font-family-main;
 }
 dt {
   font-weight: bold;
