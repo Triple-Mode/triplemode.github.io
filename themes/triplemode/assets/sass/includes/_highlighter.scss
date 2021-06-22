@@ -1,31 +1,5 @@
-/* .post-content > p > code {
-    background-color: $brand-color;
-    color: #fff;
-    padding: 5px;
-    border-radius: 3px;
-    font-weight: $semi-bold;
-}
-
-.post-content > pre {
-    background-color: $brand-color;
-    color: #fff;
-    padding: 5px;
-    border-radius: 3px;
-    font-weight: $semi-bold;
-}
-
-.post-content > pre > code > a {
-    color: #fff;
-}
-
-.post-content > pre > code > a:hover {
-    color: #8be9fd;
-    
-} */
-
 .post-content > p > code {
-    background-color: $syntax-background;
-    color: $text-color;
+    color: #0073ea;
     padding: 5px;
     border-radius: 3px;
     font-weight: $medium;
